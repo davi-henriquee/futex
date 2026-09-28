@@ -52,6 +52,7 @@
       parsed.players = parsed.players.map((player) => ({
         ...player,
         archived: Boolean(player.archived),
+        manualAdjustment: Boolean(player.manualAdjustment),
         pending: normalizePending(player.pending, Boolean(player.goalkeeper)),
       }));
       parsed.draft = parsed.draft || null;
@@ -117,6 +118,7 @@
         photo: typeof player.photo === "string" && player.photo.startsWith("data:image/") ? player.photo : "",
         goalkeeper,
         archived: Boolean(player.archived),
+        manualAdjustment: Boolean(player.manualAdjustment),
         attrs,
         pending: normalizePending(player.pending, goalkeeper),
         createdAt: typeof player.createdAt === "string" ? player.createdAt : new Date().toISOString(),
@@ -303,9 +305,12 @@
       <div class="player-list-head" aria-hidden="true">
         <span>Jogador</span><span>Overall</span><span>Partidas</span><span>Vitórias</span><span>Aproveitamento</span><span></span>
       </div>` + [...players]
-      .sort((a, b) => overall(b) - overall(a) || a.name.localeCompare(b.name, "pt-BR"))
-      .map((player) => {
-        const stats = playerStats(player);
+      .map((player) => ({ player, stats: playerStats(player) }))
+      .sort((a, b) => b.stats.wins - a.stats.wins
+        || b.stats.winRate - a.stats.winRate
+        || b.stats.matches - a.stats.matches
+        || a.player.name.localeCompare(b.player.name, "pt-BR"))
+      .map(({ player, stats }) => {
         return `
           <button class="player-list-row ${player.goalkeeper ? "goalkeeper-row" : ""}" data-player-id="${player.id}" aria-label="Abrir carta de ${escapeHtml(player.name)}">
             <span class="list-player">
@@ -313,7 +318,13 @@
                 <span class="list-avatar">${photoMarkup(player, true)}</span>
                 ${player.pending.length ? `<span class="list-pending-star" title="${player.pending.length} ajuste(s) pendente(s)">*<small>${player.pending.length}</small></span>` : ""}
               </span>
-              <span class="list-player-copy"><strong>${escapeHtml(player.name)}</strong><span>${tierFor(overall(player)).name}</span></span>
+              <span class="list-player-copy">
+                <strong>${escapeHtml(player.name)}</strong>
+                <span class="list-player-meta">
+                  <span class="list-player-tier">${tierFor(overall(player)).name}</span>
+                  ${player.manualAdjustment ? `<span class="manual-adjustment-badge">Ajuste manual</span>` : ""}
+                </span>
+              </span>
             </span>
             <span class="list-stat overall"><small>Overall</small><strong>${formatOverall(overall(player))}</strong></span>
             <span class="list-stat"><small>Partidas</small><strong>${stats.matches}</strong></span>
@@ -943,6 +954,7 @@
       photo: pendingPhoto,
       goalkeeper,
       archived: false,
+      manualAdjustment: false,
       attrs: Object.fromEntries(attributes.map((item) => [item.key, 60])),
       pending: [],
       createdAt: new Date().toISOString(),

@@ -201,6 +201,23 @@ h1 { margin-bottom: 13px; font-size: clamp(44px, 6vw, 78px); line-height: .93; l
 .list-player-copy strong, .list-player-copy span { display: block; }
 .list-player-copy strong { margin-bottom: 5px; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .list-player-copy span { color: var(--muted); font-size: 9px; }
+.list-player-copy .list-player-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.list-player-copy .list-player-tier { color: var(--muted); }
+.list-player-copy .manual-adjustment-badge {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  padding: 2px 6px;
+  border: 1px solid rgba(185,242,39,.2);
+  border-radius: 999px;
+  color: rgba(219,238,206,.74);
+  background: rgba(185,242,39,.055);
+  font-size: 6px;
+  font-weight: 900;
+  letter-spacing: .45px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
 .list-stat { text-align: center; }
 .list-stat small { display: none; }
 .list-stat strong { font-size: 14px; }
