@@ -1,7 +1,7 @@
 {
   "application": "FUTEX",
   "version": 1,
-  "exportedAt": "2026-09-15T15:11:26.395Z",
+  "exportedAt": "2026-09-28T19:34:16.289Z",
   "data": {
     "players": [
       {
@@ -62,12 +62,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 72,
-          "chute": 66,
-          "passe": 69,
-          "drible": 69,
-          "defesa": 77,
-          "visao": 67
+          "velocidade": 67,
+          "chute": 61,
+          "passe": 64,
+          "drible": 64,
+          "defesa": 72,
+          "visao": 62
         },
         "pending": [],
         "createdAt": "2026-08-03T16:10:45.907Z"
@@ -79,12 +79,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 47,
-          "chute": 49,
-          "passe": 58,
-          "drible": 52,
-          "defesa": 50,
-          "visao": 44
+          "velocidade": 52,
+          "chute": 54,
+          "passe": 63,
+          "drible": 57,
+          "defesa": 55,
+          "visao": 49
         },
         "pending": [],
         "createdAt": "2026-08-03T16:16:23.893Z"
@@ -113,12 +113,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 58,
-          "chute": 59,
-          "passe": 60,
-          "drible": 62,
-          "defesa": 62,
-          "visao": 59
+          "velocidade": 68,
+          "chute": 69,
+          "passe": 70,
+          "drible": 72,
+          "defesa": 72,
+          "visao": 69
         },
         "pending": [],
         "createdAt": "2026-08-03T16:16:46.553Z"
@@ -177,12 +177,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 70,
-          "chute": 64,
-          "passe": 64,
-          "drible": 70,
-          "defesa": 72,
-          "visao": 62
+          "velocidade": 65,
+          "chute": 59,
+          "passe": 59,
+          "drible": 65,
+          "defesa": 67,
+          "visao": 57
         },
         "pending": [],
         "createdAt": "2026-08-03T16:31:27.499Z"
@@ -211,12 +211,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 65,
-          "chute": 58,
-          "passe": 59,
-          "drible": 60,
-          "defesa": 64,
-          "visao": 54
+          "velocidade": 55,
+          "chute": 48,
+          "passe": 49,
+          "drible": 50,
+          "defesa": 54,
+          "visao": 44
         },
         "pending": [],
         "createdAt": "2026-08-03T16:33:07.127Z"
@@ -228,12 +228,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 63,
-          "chute": 67,
-          "passe": 65,
-          "drible": 65,
-          "defesa": 65,
-          "visao": 65
+          "velocidade": 53,
+          "chute": 57,
+          "passe": 55,
+          "drible": 55,
+          "defesa": 55,
+          "visao": 55
         },
         "pending": [],
         "createdAt": "2026-08-03T16:33:10.985Z"
@@ -328,12 +328,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 62,
-          "chute": 62,
-          "passe": 64,
-          "drible": 65,
-          "defesa": 63,
-          "visao": 62
+          "velocidade": 57,
+          "chute": 57,
+          "passe": 59,
+          "drible": 60,
+          "defesa": 58,
+          "visao": 57
         },
         "pending": [],
         "createdAt": "2026-08-17T19:26:35.958Z"
