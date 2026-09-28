@@ -62,12 +62,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 67,
-          "chute": 61,
-          "passe": 64,
-          "drible": 64,
-          "defesa": 72,
-          "visao": 62
+          "velocidade": 62,
+          "chute": 56,
+          "passe": 59,
+          "drible": 59,
+          "defesa": 67,
+          "visao": 57
         },
         "pending": [],
         "createdAt": "2026-08-03T16:10:45.907Z"
@@ -160,12 +160,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 52,
-          "chute": 55,
-          "passe": 64,
-          "drible": 63,
-          "defesa": 62,
-          "visao": 58
+          "velocidade": 62,
+          "chute": 65,
+          "passe": 74,
+          "drible": 73,
+          "defesa": 72,
+          "visao": 68
         },
         "pending": [],
         "createdAt": "2026-08-03T16:22:28.817Z"
@@ -262,12 +262,12 @@
         "goalkeeper": false,
         "archived": false,
         "attrs": {
-          "velocidade": 76,
-          "chute": 67,
-          "passe": 69,
-          "drible": 76,
-          "defesa": 53,
-          "visao": 61
+          "velocidade": 78,
+          "chute": 69,
+          "passe": 71,
+          "drible": 78,
+          "defesa": 55,
+          "visao": 63
         },
         "pending": [],
         "createdAt": "2026-08-11T10:34:34.654Z"
